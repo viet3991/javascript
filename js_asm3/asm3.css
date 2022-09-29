@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+
+/*  */
+.header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+/*  */
+.inputData {
+
+    margin-top: 25px;
+    font-weight: 700;
+}
+.inputData div {
+    padding-bottom: 10px;
+}
+
+/*  */
+.Nhap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tbl {
+    margin: auto;
+    margin-top: 30px;
+    /* padding: 0px 15px; */
+}
+
+.Tinh {
+    margin-top: 15px;
+    
+}
+.Tinh div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.xoaDong {
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+.xoaDong div {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------- Định dạng nút nhấn ---------*/
+.button {
+    border: none;
+    padding: 5px 10px;
+    text-align: center;   
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#btnNhap {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+#btnNhap:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#btnDiemTB {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+#btnDiemTB:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#btnXepLoai {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+#btnXepLoai:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+#btnKem {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #8dbe4d;
+}
+#btnKem:hover {
+    background-color: #4a7511;
+    color: white;
+}
+
+#btnXoa {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #686964;
+}
+#btnXoa:hover {
+    background-color: #686964;
+    color: white;
+}
+
+/* -------- Định dạng bảng ---------*/
+
+
+.tbl table {
+    width: 100%;
+    border-collapse: separate;
+}
+.tbl th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 6px;
+}
+.tbl th {
+    background-color: #04AA6D;
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: rgb(207, 216, 224);
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:hover {
+    background-color: rgb(222, 211, 243);
+}
+
+
+
+/* -------- Reponsive ---------*/
+@media screen and (max-width: 767px){
+    body {
+        background-color: rgb(228, 231, 213);
+    }
+    .container .header h1 {
+        font-size: 30px;
+    }
+    
+    .inputData input {
+        width: 100%;
+    }
+    .inputData label {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        margin-bottom: -5px;
+
+    }
+ 
+    .xoaDong label {
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .xoaDong input {
+        width: 100%;
+        margin: 0px 10px;
+    }
+    .button {
+        font-size: 12px;
+    }
+    .tbl th, td {
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 768px){
+    body {
+        background-color: rgb(201, 221, 224);
+    }
+    .container .header h1 {
+        font-size: 45px;
+    }
+    /*  */
+    .inputData label {
+        display: flex;
+        justify-content: right;
+        font-size: 14px;
+
+    }
+    .inputData input {
+        display: flex;
+        align-items: center;
+
+    }
+    /*  */
+    
+    .xoaDong label {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .xoaDong input {
+        width: 100%;
+        margin: 0px 10px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .tbl th, td {
+        font-size: 14px;
+    }
+    .Tinh .right {
+        display: flex;
+        justify-content: right;
+    }
+    .Tinh .left {
+        display: flex;
+        justify-content: left;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .xoaDong .right {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .xoaDong .left {
+        display: flex;
+        justify-content: left;
+    }
+}
+
+
+
+
