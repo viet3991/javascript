@@ -20,19 +20,19 @@ $(document).ready(function(){
     
         testCore.math = $("#math").val();
         while(testCore.math < 0 || testCore.math > 10 || !testCore.math) {
-            alert("Xin vui lòng nhập lại điểm toán");
+            alert("Xin vui lòng nhập lại điểm Toán");
             return false;
         }
     
         testCore.physical = $("#physical").val();
         while(testCore.physical < 0 || testCore.physical > 10 || !testCore.physical) {
-            alert("Xin vui lòng nhập lại điểm lý");
+            alert("Xin vui lòng nhập lại điểm Vật lý");
             return false;
         }
     
         testCore.chemistry = $("#chemistry").val();
         while(testCore.chemistry < 0 || testCore.chemistry > 10 || !testCore.chemistry) {
-            alert("Xin vui lòng nhập lại điểm hóa");
+            alert("Xin vui lòng nhập lại điểm Hóa học");
             return false;
         }
     
